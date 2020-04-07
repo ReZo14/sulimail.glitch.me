@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<!-- Mirrored from sulimail.glitch.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2020 20:06:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        
+        <title>ايميل وهمي  | بريد مؤقت | بريد 10 دقائق  | بريد مهمل 10</title>
+        
+        <meta name="description" content="ايميل وهمي  و  بريد مؤقت و  بريد 10 دقائق  و  بريد مهمل موقع يمكنك من  انشاء ايمييل عشر دقائق او ايميل مؤقت ويمكنك انشاء بريد الكتروني مؤقت او اكثر ايميل وهمي ايميل مؤقت 10 دقائق وايضا حساب لمدة 10 "/>
+        
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- TMail Styles -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Vendor Styles -->
+        <link href="core/JqueryScrollbar/jquery.custom-scrollbar.css" rel="stylesheet">
+        <link href="../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link href="../fonts.googleapis.com/cssff98.css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <!-- Vendor JS -->
+        <script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="../maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="core/signals.js"></script>
+        <script src="core/hasher.min.js"></script> 
+        <script src="core/JqueryScrollbar/jquery.custom-scrollbar.min.js"></script> 
+    </head>
+
+    <body style='padding: 0;'>
+        <div class="container-fluid tmail-container">
+            <div class="row">
+                <div class="col-lg-12 p-0">
+                    <div class="tmail-header" style='border-radius: 0;'>
+                        <div class="tmail-mobile-menu">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="tmail-logo">
+                            <a href="index.html"><img src="images/logo.png" height="50"></a>
+                        </div>
+                        <div class="tmail-language-switcher">
+                            <select class="setLang" name="lang" onchange="setLang()">
+                                <option value="en" >English</option>
+                                <option value="hi" >हिंदी</option>
+                                <option value="fr" >Français</option>
+                                <option value="ch" >中文</option>
+                                <option value="ar" selected>عربى</option>
+                                <option value="sp" >Español</option>
+                                <option value="ru" >русский</option>
+                                <option value="de" >Deutsch</option>
+                                <option value="pl" >Polskie</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container-fluid tmail-main">
+                        <div class="row tmail-loader">
+                            <div class="inner-loader"><span>جاري التحميل	</span> <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> </div>
+                        </div>
+                        <div class="row tmail-homepage">
+                            <div class="tmail-main-inner" align="center">
+                                <input onKeyPress="checkEnter(event, this)" class="tmail-input-set-email" type="text" name="email" placeholder=" انشاء عنوان بريد الكتروني">
+                                <select class="tmail-input-set-domain" name="domain">
+                                    <option value="@sulimail.glitch.me">@sulimail.glitch.me</option>                                </select>
+                                <div class="tmail-generate-custom">
+                                    <a href="#" onclick="setNewID()">
+                                        <i class="fa fa-paper-plane" aria-hidden="true"></i> انشاء	 
+                                    </a>
+                                </div>
+                                <div style="font-size: 18px;">أو	</div>
+                                <div class="tmail-generate-random">
+                                    <a href="#" onclick="createUser('')">
+                                        <i class="fa fa-random" aria-hidden="true"></i>انشاء عنوان عشوائي	                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid tmail-body">
+                        <div class="row">
+                            <div class="col-lg-2 tmail-sidebar p-0">
+                                <div class="menu-title">القائمة الرئيسية	</div>
+                                <ul class="tmail-main-menu p-0">
+                                                                    </ul>
+                            </div>
+                            <div class="col-lg-4 tmail-list p-0">
+                                <div class="tmail-current-id clearfix" onclick="copyToClipboard('#current-tmail-id')">
+                                    <div class="tmail-current-id-icon float-left">
+                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="tmail-current-id-info float-left">
+                                        <div id="current-tmail-id">Your EMail ID</div>
+                                        <div class="tmail-current-id-info-text">يتم تحديث البريد الالكتروني كل 5 ثزاني 	</div>
+                                    </div>
+                                </div>
+                                <div class="input-group tmail-search-input">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" id="tmail-search" class="form-control" placeholder="البحث عن البريد الإلكتروني	">
+                                </div>
+                                <ul id="tmail-data" class="tmail-list-ul">
+                                </ul>
+                                <div class="tmail-list-placeholder">
+                                    <span>سيتم عرض رسائل البريد الإلكتروني الخاصة بك هنا	</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 tmail-email-body">
+                                <div class="tmail-email-body-placeholder">
+                                    <span>لم يتم اختيار البريد الإلكتروني	</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tmail-footer clearfix" style='border-radius: 0;'>
+                        <div class="dropup tmail-switch float-left">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                تبديل عنوان البريد الالكتروني	 &nbsp;
+                                <span class="caret"></span>
+                            </button>
+                            <ul id="tmail-switcher-list-ul" class="dropdown-menu">
+                                <li class="dropdown-create-menu">
+                                    <a href="index.html">انشاء عنوان جديد	</a>
+                                </li>
+                                                            </ul>
+                        </div>
+                        <div class="tmail-list-clear float-left">
+                            <button onclick="clearEMails()" class="btn btn-default" type="button">مسح الاميلات</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="snackbar"></div>
+        <!-- TMail Scripts -->
+        <script src="js/scripts.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../www.googletagmanager.com/gtag/js2233?id=UA-116210756-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116210756-1');
+</script>
+    </body>
+
+
+<!-- Mirrored from sulimail.glitch.me/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2020 20:06:16 GMT -->
+</html>
